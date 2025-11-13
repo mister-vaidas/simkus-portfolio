@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, MouseEvent } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 
@@ -35,7 +36,6 @@ export default function HeroSection() {
 
     setParticles((prev) => {
       const next = [...prev, { id, x, y }];
-      // cap number of particles for performance
       if (next.length > 40) next.shift();
       return next;
     });
@@ -85,12 +85,14 @@ export default function HeroSection() {
         ))}
       </div>
 
-      <div
+      <motion.div
         ref={heroRef}
         onMouseMove={handleMouseMove}
-        className="
-          relative
-        "
+        initial={{ opacity: 0, y: 40, scale: 0.97 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ amount: 0.55, once: false }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="relative"
       >
         <Container
           className="
@@ -158,7 +160,7 @@ export default function HeroSection() {
                 href="#"
                 className="inline-flex items-center gap-2 rounded-full border border-slate-700/70 px-4 py-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-slate-300 transition hover:border-emerald-400/70 hover:text-emerald-200"
               >
-                Download CV (soon)
+                Download CV
               </a>
             </div>
           </div>
@@ -192,7 +194,7 @@ export default function HeroSection() {
             </div>
           </div>
         </Container>
-      </div>
+      </motion.div>
     </section>
   );
 }
