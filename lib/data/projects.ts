@@ -30,19 +30,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "kiddyhop-store",
-    title: "KIDDYHOP – Kids E-commerce Store",
-    role: "Full-stack Developer",
-    timeframe: "2024",
-    summary:
-      "A custom e-commerce store focused on kids’ products, with product management, basket/checkout flow, and AWS-hosted infrastructure.",
-    tech: ["Next.js", "PostgreSQL", "Stripe", "AWS EC2", "NGINX"],
-    links: [
-      { label: "Visit store", href: "https://kiddyhop.co.uk" },
-    ],
-    featured: true,
-  },
-  {
     slug: "zzb-motive",
     title: "ZZB Motive – Automotive Services",
     role: "Full-stack Developer",
@@ -61,9 +48,12 @@ export const projects: Project[] = [
     role: "Frontend Developer",
     timeframe: "2024",
     summary:
-      "A visually rich, mobile-first website for a salon offering tattoo, lashes, nails, and more, with galleries and structured service pages.",
+      "A visually rich, mobile-first website for a salon offering tattoos, lashes, nails and more, with galleries and structured service pages.",
     tech: ["Next.js", "Tailwind CSS", "AWS S3", "Design Systems"],
-    featured: false,
+    links: [
+      { label: "Visit website", href: "https://hellhousesalon.co.uk/" },
+    ],
+    featured: true,
   },
   {
     slug: "simkus-portfolio",
