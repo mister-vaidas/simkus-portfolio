@@ -173,7 +173,7 @@ export default function HeroSection() {
 
               <div className="relative h-40 w-40 overflow-hidden rounded-[2rem] border border-slate-600/70 bg-slate-900/90 shadow-2xl shadow-sky-900/60 sm:h-52 sm:w-52 lg:h-64 lg:w-64">
                 <Image
-                  src="https://vaidas-public-data.s3.eu-west-2.amazonaws.com/personal-website/profile-picture/mister-v.png" // ensure this is a good quality square image
+                  src="https://vaidas-public-data.s3.eu-west-2.amazonaws.com/personal-website/profile-picture/mister-v.png"
                   alt="Profile picture of Vaidas"
                   fill
                   priority
