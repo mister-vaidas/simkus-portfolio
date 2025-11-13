@@ -30,7 +30,7 @@ export default function Header() {
               VAIDAS SIMKUS
             </span>
             <span className="text-[11px] text-slate-400">
-              Software Developer
+              Full Stack Engineer
             </span>
           </div>
         </Link>
