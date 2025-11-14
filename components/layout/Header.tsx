@@ -7,7 +7,7 @@ import Container from "./Container";
 const navItems = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#social" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
