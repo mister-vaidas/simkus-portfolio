@@ -150,14 +150,15 @@ export default function HeroSection() {
               </a>
 
               <a
-                href="#social"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-5 py-2.5 font-medium text-slate-100 transition hover:border-sky-500/60 hover:bg-slate-900 hover:text-sky-100"
               >
                 <span>Contact me</span>
               </a>
 
               <a
-                href="#"
+                href="https://vaidas-public-data.s3.eu-west-2.amazonaws.com/personal-website/cv/Vaidas_Simkus_Premium_Design_CV.pdf"
+                download
                 className="inline-flex items-center gap-2 rounded-full border border-slate-700/70 px-4 py-2.5 text-[11px] font-medium uppercase tracking-[0.18em] text-slate-300 transition hover:border-emerald-400/70 hover:text-emerald-200"
               >
                 Download CV
@@ -175,7 +176,7 @@ export default function HeroSection() {
 
               <div className="relative h-40 w-40 overflow-hidden rounded-[2rem] border border-slate-600/70 bg-slate-900/90 shadow-2xl shadow-sky-900/60 sm:h-52 sm:w-52 lg:h-64 lg:w-64">
                 <Image
-                  src="https://vaidas-public-data.s3.eu-west-2.amazonaws.com/personal-website/profile-picture/mister-v.png"
+                  src="https://vaidas-public-data.s3.eu-west-2.amazonaws.com/personal-website/profile-picture/mister-v-new.png"
                   alt="Profile picture of Vaidas"
                   fill
                   priority
